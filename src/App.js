@@ -11,7 +11,7 @@ class App extends Component {
 			<div className="App">
 				<Navbar logo="React" />
 				<Title title="Título da Aplicação" />
-				<Container fuid={true}>
+				<Container>
 					<Card style={{ width: '18rem' }}>
 						<Card.Img variant="top" src="holder.js/100px180" />
 						<Card.Body>

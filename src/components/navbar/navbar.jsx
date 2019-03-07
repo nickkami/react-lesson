@@ -24,25 +24,23 @@ const Nav = styled.nav`
         }
     }
 `
-class Navbar extends React.Component{
-    render(){
-        let menu = [
-            {title:'Home', link:'home.html'},
-            {title:'Produtos', link:'produto.html'},
-            {title:'Sobre', link:'sobre.html'},
-            {title:'Contato', link:'contato.html'},
-        ];
+let Navbar = (props) => {
+    let menu = [
+        {title:'Home', link:'home.html'},
+        {title:'Produtos', link:'produto.html'},
+        {title:'Sobre', link:'sobre.html'},
+        {title:'Contato', link:'contato.html'},
+    ];
 
-        return(
-            <Nav>
-                <div className="nav-wrapper">
-                    <a href="logo.html">{this.props.logo}</a>
-                    <Navmenu menu={menu}/>
-                </div>
-            </Nav>
-        )
-    } 
-}
+    return(
+        <Nav>
+            <div className="nav-wrapper">
+                <a href="logo.html">{props.logo}</a>
+                <Navmenu menu={menu}/>
+            </div>
+        </Nav>
+    )
+};
 
 export default Navbar;
 
